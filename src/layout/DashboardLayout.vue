@@ -20,8 +20,8 @@ export default {
     TopNavbar,
     ContentFooter,
     DashboardContent,
-    MobileMenu,
-    Footer
+    MobileMenu//,
+    //Footer
   },
   methods: {
     toggleSidebar() {
