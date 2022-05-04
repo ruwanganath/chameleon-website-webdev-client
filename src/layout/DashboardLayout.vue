@@ -4,6 +4,7 @@
       <top-navbar></top-navbar>
 
       <dashboard-content @click="toggleSidebar"> </dashboard-content>
+
     </div>
   </div>
 </template>
@@ -20,6 +21,7 @@ export default {
     ContentFooter,
     DashboardContent,
     MobileMenu,
+    Footer
   },
   methods: {
     toggleSidebar() {
