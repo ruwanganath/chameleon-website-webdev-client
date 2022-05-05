@@ -16,9 +16,11 @@
     "bootstrap": "^4.3.1",
     "chartist": "^0.11.0",
     "google-maps": "^3.2.1",
+    "npm-upgrade": "^3.1.0",
     "register-service-worker": "^1.5.2",
     "v-tooltip": "^2.0.0-rc.33",
     "vue": "^2.6.6",
+    "vue-loader": "^15.4.2",
     "vue-router": "^3.0.2",
     "vue2-google-maps": "^0.8.4"
   },
@@ -30,7 +32,7 @@
     "sass": "^1.50.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.6",
-    "webpack": "^5.72.0"
+    "webpack": "^4.46.0"
   },
   "browserslist": [
     "> 1%",
