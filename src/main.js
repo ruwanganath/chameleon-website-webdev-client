@@ -16,6 +16,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+<<<<<<< HEAD
+=======
+import $ from 'jquery'
+Vue.prototype.$ = $
+>>>>>>> wensong
 
 // LightBootstrap plugin
 import LightBootstrap from './light-bootstrap-main'

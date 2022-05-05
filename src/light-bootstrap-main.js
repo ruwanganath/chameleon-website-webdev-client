@@ -11,6 +11,10 @@ import SideBar from './components/SidebarPlugin'
 // asset imports
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/sass/light-bootstrap-dashboard.scss'
+<<<<<<< HEAD
+=======
+import 'bootstrap/dist/js/bootstrap.min.js'
+>>>>>>> wensong
 import './assets/css/demo.css'
 
 /**
