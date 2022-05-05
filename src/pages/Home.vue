@@ -1,8 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div>Home</div>
-</template>
-=======
   <div class="home">
     <div class="first">
       <div class="title">welcome to Chameleon</div>

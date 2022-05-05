@@ -4,10 +4,7 @@
       <top-navbar></top-navbar>
 
       <dashboard-content @click="toggleSidebar"> </dashboard-content>
-<<<<<<< HEAD
-=======
 
->>>>>>> wensong
     </div>
   </div>
 </template>
@@ -23,12 +20,8 @@ export default {
     TopNavbar,
     ContentFooter,
     DashboardContent,
-<<<<<<< HEAD
-    MobileMenu,
-=======
     MobileMenu//,
     //Footer
->>>>>>> wensong
   },
   methods: {
     toggleSidebar() {
