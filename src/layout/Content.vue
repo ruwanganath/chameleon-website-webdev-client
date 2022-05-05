@@ -1,10 +1,6 @@
 <template>
   <transition name="fade" mode="out-in">
     <router-view></router-view>
-<<<<<<< HEAD
-=======
-    
->>>>>>> wensong
   </transition>
 </template>
 <script>
