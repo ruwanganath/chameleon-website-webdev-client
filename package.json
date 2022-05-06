@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
+    "@vue/babel-preset-app": "^5.0.4",
     "@vue/compiler-sfc": "^3.2.33",
     "@vue/eslint-config-airbnb": "^5.3.0",
     "axios": "^0.21.1",
