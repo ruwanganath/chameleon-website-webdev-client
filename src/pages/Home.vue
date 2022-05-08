@@ -2,17 +2,15 @@
   <div class="home">
     <div class="first">
       <div class="title">welcome to Chameleon</div>
-
       <div class="explain">Striving to create a smarter world!</div>
-
       <div class="button">
-        <button
+        <a href="#/web/login"
           type="button"
           style="width: 130px"
           class="btn btn-warning active"
         >
           Login
-        </button>
+        </a>
       </div>
 
       <div class="right">

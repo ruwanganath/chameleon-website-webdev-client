@@ -7,6 +7,9 @@ import Portfolio from '../pages/Portfolio.vue'
 import Resources from '../pages/Resources.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 
+import Login from '../pages/Login.vue'
+
+
 
 const routes = [
   {
@@ -43,6 +46,11 @@ const routes = [
         path: 'resources',
         name: 'Resources',
         component: Resources
+      },
+      {
+        path: 'login',
+        name: 'Login',
+        component: Login
       },
     ]
   },
