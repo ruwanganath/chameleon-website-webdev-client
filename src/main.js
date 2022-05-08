@@ -16,6 +16,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import store from './store.js'
 
 import $ from 'jquery'
 Vue.prototype.$ = $
@@ -47,6 +48,7 @@ const router = new VueRouter({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  //HERE store,
   render: h => h(App),
   router
 })

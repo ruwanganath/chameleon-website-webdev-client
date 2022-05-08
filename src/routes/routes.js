@@ -8,6 +8,7 @@ import Resources from '../pages/Resources.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 
 import Login from '../pages/Login.vue'
+import Register from  '../pages/Register.vue'
 
 
 
@@ -51,6 +52,11 @@ const routes = [
         path: 'login',
         name: 'Login',
         component: Login
+      },
+      {
+        path: 'register',
+        name: 'Register',
+        component: Register
       },
     ]
   },

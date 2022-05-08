@@ -13,16 +13,18 @@
             <h1>Welcome Back</h1>
             <p class="p1">Please enter your details</p>
             <div>
-                <input type="email"  class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" v-model="email" />
+                <input type="email"  class="form-control" id="email" placeholder="Email" aria-describedby="emailHelp" v-model="email" />
             </div>
             <div>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" v-model="password" />
+                <input type="password" class="form-control" id="password" placeholder="Password" v-model="password" />
             </div>
               <br />
               <div class="error" v-html="error"></div>
                 <button @click="login" type="submit" class="btn btn-primary">Login</button>
                 <div style ="margin-top:20px;">
-                    <p class="p1">Don't have an account? <button class="sign-up-btm">Sign Up</button></p>
+                    <p class="p1">Don't have an account?
+                        <a class="sign-up-btm" href="#/web/register"> Sign Up</a>
+                    </p>
                 </div>
           </div>
         </form>
@@ -57,10 +59,11 @@ export default {
           email: this.email,
           password: this.password,
         });
-        this.$store.dispatch("setToken", response.data.token);
-        this.$store.dispatch("setUser", response.data.user);
+        this.error = response.data.error;
+        //this.$store.dispatch("setToken", response.data.token);
+        //this.$store.dispatch("setUser", response.data.user);
       } catch (error) {
-        this.error = error.response.data.error;
+          console.log(error, error.response)
       }
     },
   },

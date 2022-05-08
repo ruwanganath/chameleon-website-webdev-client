@@ -5,8 +5,11 @@
   </div>
 </template>
 
+
 <script>
-  export default {}
+//HERE
+  export default {
+  }
 </script>
 <style lang="scss">
   .vue-notifyjs.notifications{
