@@ -6,5 +6,8 @@ export default {
   },
   register (credentials) {
     return Api().post('register', credentials)
-  }
+  },
+  forgot (credentials)  {
+    return Api().post('forgot', credentials)
+  },
 }

@@ -9,6 +9,8 @@ import NotFoundPage from '../pages/NotFoundPage.vue'
 
 import Login from '../pages/Login.vue'
 import Register from  '../pages/Register.vue'
+import Forgot from  '../pages/Forgot.vue'
+import Reset from  '../pages/Reset.vue'
 
 
 
@@ -57,6 +59,16 @@ const routes = [
         path: 'register',
         name: 'Register',
         component: Register
+      },
+      {
+        path: 'forgot',
+        name: 'Forgot',
+        component: Forgot
+      },
+      {
+        path: 'reset-password/:id/:token',
+        name: 'Reset',
+        component: Reset
       },
     ]
   },

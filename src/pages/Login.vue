@@ -19,6 +19,12 @@
                 <input type="password" class="form-control" id="password" placeholder="Password" v-model="password" />
             </div>
               <br />
+              <div >
+                <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+
+                  <a class="forgot-password text-right" href="#/web/forgot">Forgot Password?</a>
+
+              </div>
               <div class="error" v-html="error"></div>
                 <button @click="login" type="submit" class="btn btn-primary">Login</button>
                 <div style ="margin-top:20px;">
@@ -60,8 +66,9 @@ export default {
           password: this.password,
         });
         this.error = response.data.error;
-        //this.$store.dispatch("setToken", response.data.token);
-        //this.$store.dispatch("setUser", response.data.user);
+        this.$router.push('/web/home');
+        this.$store.dispatch("setToken", response.data.token);
+        this.$store.dispatch("setUser", response.data.user);
       } catch (error) {
           console.log(error, error.response)
       }
@@ -71,6 +78,11 @@ export default {
 </script>
 
   <style scoped>
+.forgot-password{
+  float: right;
+  color: #121212;
+  text-decoration: none;
+}
 
 .background {
   background: rgb(255, 255, 255);
