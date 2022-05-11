@@ -66,11 +66,17 @@ export default {
           password: this.password,
         });
         this.error = response.data.error;
-        this.$router.push('/web/home');
-        this.$store.dispatch("setToken", response.data.token);
-        this.$store.dispatch("setUser", response.data.user);
+        //this.$store.dispatch("setToken", response.data.token);
+        //this.$store.dispatch("setUser", response.data.user);
+        //localStorage.setItem('token', response.data.token);
+        
       } catch (error) {
           console.log(error, error.response)
+      }
+
+      if (this.error == null)
+      {
+        this.$router.push('/web/home');
       }
     },
   },

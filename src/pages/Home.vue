@@ -245,10 +245,18 @@ const Ellipse1 = require("@/assets/images/Ellipse1.png");
 const image2 = require("@/assets/images/image2.png");
 const image = require("@/assets/images/Image.png");
 const sendimage = require("@/assets/images/Group18.png");
-
+//import axios from 'axios'
 
 export default {
   name: "Home",
+  //async created() {
+  //    const response = await axios.get('user', {
+  //     header: {
+  //        Authorization: 'Bearer ' + localStorage.getItem('token')
+  //      }
+  //    });
+  //    console.log(response);
+  //},
   data() {
     return {
       Ellipse,
