@@ -4,7 +4,8 @@
       <div class="title">welcome to Chameleon</div>
       <div class="explain">Striving to create a smarter world!</div>
       <div class="button">
-        <a href="#/web/login"
+        <a
+          href="#/web/login"
           type="button"
           style="width: 130px"
           class="btn btn-warning active"
@@ -227,7 +228,7 @@
               ></textarea>
             </div>
             <div class="sendimage">
-              <img :src="sendimage" alt="">
+              <img :src="sendimage" alt="" />
             </div>
           </form>
         </div>
@@ -245,18 +246,10 @@ const Ellipse1 = require("@/assets/images/Ellipse1.png");
 const image2 = require("@/assets/images/image2.png");
 const image = require("@/assets/images/Image.png");
 const sendimage = require("@/assets/images/Group18.png");
-//import axios from 'axios'
+import {} from "axios";
 
 export default {
   name: "Home",
-  //async created() {
-  //    const response = await axios.get('user', {
-  //     header: {
-  //        Authorization: 'Bearer ' + localStorage.getItem('token')
-  //      }
-  //    });
-  //    console.log(response);
-  //},
   data() {
     return {
       Ellipse,
@@ -267,7 +260,7 @@ export default {
       Ellipse1,
       image2,
       image,
-      sendimage
+      sendimage,
     };
   },
   mounted() {},
@@ -457,9 +450,9 @@ export default {
       padding-top: 150px;
       padding-left: 30px;
       padding-right: 100px;
-      .sendimage{
-        margin-top:50px;
-        img{
+      .sendimage {
+        margin-top: 50px;
+        img {
           width: 200px;
         }
       }

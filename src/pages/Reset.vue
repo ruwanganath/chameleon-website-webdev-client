@@ -52,10 +52,10 @@ export default {
       if (response.data.code === "Successful match!") {
         this.authentication = true;
       }
-      console.log(id)
+      console.log(id);
     },
     async newPassword() {
-    if (this.authentication) {
+      if (this.authentication) {
         try {
           const response = await AuthenticationService.newPassword({
             email: this.$route.params.email,
