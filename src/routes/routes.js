@@ -10,6 +10,8 @@ import NotFoundPage from '../pages/NotFoundPage.vue'
 import Login from '../pages/Login.vue'
 import Register from  '../pages/Register.vue'
 import Profile from  '../pages/Profile.vue'
+import Privacy from  '../pages/Privacy.vue'
+import Terms from  '../pages/Terms.vue'
 
 
 const routes = [
@@ -62,6 +64,16 @@ const routes = [
         path: 'profile',
         name: 'Profile',
         component: Profile
+      },
+      {
+        path: 'privacy',
+        name: 'Privacy',
+        component: Privacy
+      },
+      {
+        path: 'terms',
+        name: 'Terms',
+        component: Terms
       },
     ]
   },
