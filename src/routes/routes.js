@@ -9,7 +9,7 @@ import NotFoundPage from '../pages/NotFoundPage.vue'
 
 import Login from '../pages/Login.vue'
 import Register from  '../pages/Register.vue'
-import Register from  '../pages/Profile.vue'
+import Profile from  '../pages/Profile.vue'
 
 
 const routes = [
