@@ -19,13 +19,13 @@ module.exports = {
       new webpack.optimize.LimitChunkCountPlugin({
         maxChunks: 6
       }),
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "windows.jQuery": "jquery",
-        Popper: ["popper.js", "default"],
+      // new webpack.ProvidePlugin({
+      //   $: "jquery",
+      //   jQuery: "jquery",
+      //   "windows.jQuery": "jquery",
+      //   Popper: ["popper.js", "default"],
 
-      })
+      // })
     ]
   },
   pwa: {

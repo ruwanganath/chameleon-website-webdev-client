@@ -34,7 +34,7 @@
       </div>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"> Home </a>
+          <a class="nav-link" href="#/web/home"> Home </a>
         </li>
 
         <li class="nav-item">
@@ -48,6 +48,9 @@
         </li>
         <li class="nav-item">
           <a href="#/web/resources" class="nav-link"> Resources </a>
+        </li>
+         <li class="nav-item">
+          <a href="#/web/home?flag=subscribe" class="nav-link"> Subscribe </a>
         </li>
       </ul>
     </div>
