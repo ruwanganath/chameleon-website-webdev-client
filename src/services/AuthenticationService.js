@@ -6,5 +6,8 @@ export default {
   },
   register (credentials) {
     return Api().post('register', credentials)
+  },
+  updateProfile(form) {
+    return Api().post('profile', form)
   }
 }
