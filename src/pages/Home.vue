@@ -3,18 +3,18 @@
     <div class="first">
       <div class="title">welcome to Chameleon</div>
       <div class="explain">Striving to create a smarter world!</div>
-      <div class="button">
-        <a href="#/web/login"
-          type="button"
-          style="width: 130px"
-          class="btn btn-warning active"
-        >
-          Login
-        </a>
-      </div>
+
+
+      <div class="button">Login</div>
+
 
       <div class="right">
-        <div class="rightIcon" data-toggle="modal" data-target="#exampleModal">
+        <div
+          class="rightIcon"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          @click="showModal1"
+        >
           <img class="rightIcon2" :src="Ellipse" alt="" />
           <img class="rightIcon3" :src="Megaphone" alt="" />
         </div>
@@ -32,28 +32,15 @@
                 <h5 class="modal-title" id="exampleModalLabel">
                   New Product Coming Soon!
                 </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                <div @click="hideModal1" class="cancel">
+                  <img :src="Multiply" alt="" />
+                </div>
               </div>
               <div class="modal-body">
                 Get ready for the revolutionary development in the IoT industry.
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-warning active"
-                  data-toggle="modal"
-                  data-target="#exampleModal2"
-                  @click="readMore"
-                >
-                  Read More
-                </button>
+                <div class="readMore" @click="showModal2">Read More</div>
               </div>
             </div>
           </div>
@@ -72,14 +59,12 @@
                 <h5 class="modal-title" id="exampleModalLabel">
                   Get more Updates!
                 </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
+                <div
+                 class="cancel"
+                  @click="hideModal2"
                 >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                 <img :src="Multiply" alt="" />
+                </div>
               </div>
               <div class="modal-body">
                 <input
@@ -90,13 +75,7 @@
                 />
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-warning active"
-                  data-toggle="modal"
-                >
-                  Subscribe
-                </button>
+                <div class="readMore">Subscribe</div>
               </div>
             </div>
           </div>
@@ -227,7 +206,7 @@
               ></textarea>
             </div>
             <div class="sendimage">
-              <img :src="sendimage" alt="">
+              <img :src="sendimage" alt="" />
             </div>
           </form>
         </div>
@@ -245,7 +224,7 @@ const Ellipse1 = require("@/assets/images/Ellipse1.png");
 const image2 = require("@/assets/images/image2.png");
 const image = require("@/assets/images/Image.png");
 const sendimage = require("@/assets/images/Group18.png");
-
+const Multiply = require("@/assets/images/Multiply.png");
 
 export default {
   name: "Home",
@@ -259,12 +238,24 @@ export default {
       Ellipse1,
       image2,
       image,
-      sendimage
+      sendimage,
+      Multiply,
     };
   },
-  mounted() {},
+  updated() {
+    alert(1)
+  },
   methods: {
-    readMore() {
+    showModal1() {
+      $("#exampleModal").modal("show");
+    },
+    hideModal1() {
+      $("#exampleModal").modal("hide");
+    },
+    hideModal2() {
+      $("#exampleModal2").modal("hide");
+    },
+    showModal2() {
       $("#exampleModal").modal("hide");
       $("#exampleModal2").modal("show");
     },
@@ -273,6 +264,26 @@ export default {
 </script>
 <style scoped lang="scss">
 .home {
+}
+.readMore {
+  width: 152px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  background: #feb95f;
+  border-radius: 17px;
+}
+.cancel {
+  background: #b9d78a;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -22px;
+  right: -10px;
+  img {
+    width: 35px;
+    height: 35px;
+  }
 }
 .first {
   padding-left: 30px;
@@ -292,6 +303,18 @@ export default {
   }
   .button {
     margin-top: 30px;
+    width: 191px;
+    height: 51px;
+    background: #faad4a;
+    text-align: center;
+    line-height: 51px;
+    color: #fff;
+    border-radius: 20px;
+    &:hover {
+      border: 2px solid #faad4a;
+      background: #fff;
+      color: #faad4a;
+    }
   }
   .button-cover {
     width: 140px;
@@ -445,13 +468,14 @@ export default {
   .right {
     flex: 1;
     background: #f9f9f9;
+
     .main {
       padding-top: 150px;
       padding-left: 30px;
       padding-right: 100px;
-      .sendimage{
-        margin-top:50px;
-        img{
+      .sendimage {
+        margin-top: 50px;
+        img {
           width: 200px;
         }
       }
