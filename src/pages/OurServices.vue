@@ -37,6 +37,11 @@
             
             
           </div>
+
+          <div class="shape">
+            Providing Quality IoT Based Solutions
+          </div>
+          
         </div>
       </div>
       
@@ -101,6 +106,27 @@ export default {
       font-weight: 100;
       
     }
+    .shape{
+  text-align:center;
+  background-color:#99c854;
+  width:40%;
+  height:20px;
+  line-height:19px;
+  color:rgb(12, 4, 4);
+  margin:20px auto;
+  position:relative;
+  border-radius: 25px;
+}
+.shape:before{
+  content:"";
+  width:0px;
+  height:0px;
+ 
+  position:absolute;
+  
+  
+  
+}
 
 
    
