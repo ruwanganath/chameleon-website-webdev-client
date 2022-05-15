@@ -38,7 +38,26 @@
             
           </div>
         </div>
-       Hello world  
+        <div class="row1">
+          <div class="column1">
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
+            <p>Project Completion Rate</p>
+          </div>
+          <div class="column1">
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
+            <p>Quality Assurance</p>
+            
+          </div>
+          <div class="column1">
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
+            <p>Customer Satisfaction</p>
+          </div>
+        </div>
+
+      
+      
+      
+      
       </div>
       
     </div>
@@ -122,9 +141,65 @@ export default {
       clear: both;
       display: table;
     }
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
 
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 12rem;
+  --fg: #99c854;
+  --bg: rgb(247, 255, 221);
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+
+/* demo */
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
     
   }  
 }
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column1 {
+      float: right;
+      width: 33.3%;
+      padding: 80px;
+      
+    }
 
+    /* Clear floats after image containers */
+    .row1::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 </style>
