@@ -5,12 +5,7 @@
       <div class="explain">Striving to create a smarter world!</div>
       <div class="button" @click="showLogin">Login</div>
       <div class="right">
-        <div
-          class="rightIcon"
-          data-toggle="modal"
-          data-target="#exampleModal"
-          @click="showModal1"
-        >
+        <div class="rightIcon" data-toggle="modal" data-target="#exampleModal">
           <img class="rightIcon2" :src="Ellipse" alt="" />
           <img class="rightIcon3" :src="Megaphone" alt="" />
         </div>
@@ -28,20 +23,75 @@
                 <h5 class="modal-title" id="exampleModalLabel">
                   New Product Coming Soon!
                 </h5>
-                <div @click="hideModal1" class="cancel">
-                  <img :src="Multiply" alt="" />
-                </div>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
               <div class="modal-body">
                 Get ready for the revolutionary development in the IoT industry.
               </div>
               <div class="modal-footer">
-                <div class="readMore" @click="showModal1">Read More</div>
+                <button
+                  type="button"
+                  class="btn btn-warning active"
+                  data-toggle="modal"
+                  data-target="#exampleModal2"
+                  @click="readMore"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
         </div>
 
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Get more Updates!
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-warning active"
+                  data-toggle="modal"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -168,11 +218,65 @@
               ></textarea>
             </div>
             <div class="sendimage">
-              <img :src="sendimage" alt="" />
+              <img :src="sendimage" alt="">
             </div>
           </form>
         </div>
       </div>
+    </div>
+
+    <div class="footer">
+        <img class="footer-tail" :src="pngwing1" alt="" />
+        <div class="footer-image">
+          <img class="logo" :src="logo" alt="" />
+        </div>
+        <div class="footer-first-heading">
+          <div class="footer-first">CHAMELEON</div>
+            <div class="footer-writing">Striving to Create a</div>
+            <div class="footer-writing">Smarter World!</div>
+          <div class="footer-first">CONTACT US</div>
+            <div class="footer-writing">+61 111 111 111</div>
+            <div class="footer-writing">Chameleon@gmail.com</div>
+        </div>
+
+        <div class="footer-second-heading">
+          <div class="footer-second">EXPLORE</div>
+            <div><a href="#/web/our-services"> Our services </a></div>
+            <div><a href="#/web/portfolio"> Portfolio </a></div>
+            <div><a href="#/web/resources"> Resources </a></div>
+            <div><a href="#/web/about-us"> About us </a></div>
+        </div>
+
+        <div class="footer-third-heading">
+          <div class="footer-third">HELPFUL LINKS</div>
+            <div class="footer-writing2" @click="showPrivacy">Privacy Policy</div>
+            <div class="footer-writing2" @click="showTerms">Teams and Conditions</div>
+          <div class="footer-third">CONNECT WITH US</div>
+            <div class="button-row-one">
+              <img class="sm-icons" :src="it" alt=""/>
+              <img class="sm-icons" :src="fb" alt="" />
+              <img class="sm-icons" :src="tt" alt="" />
+            </div>
+            <div class="button-row-two">
+              <img class="sm-icons" :src="yt" alt="" />
+              <img class="sm-icons" :src="wa" alt="" />
+              <img class="sm-icons" :src="msger" alt="" />
+            </div>
+        </div>
+
+        <div class="footer-fourth-heading">
+          <div class="footer-fourth">MORE INFROMATION</div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter your email"
+              />
+            </div>
+            <button class="button button4">Subscribe Now</button>
+        </div>
+        <div class="@chameloen"></div>
     </div>
   </div>
 </template>
@@ -186,7 +290,13 @@ const Ellipse1 = require("@/assets/images/Ellipse1.png");
 const image2 = require("@/assets/images/image2.png");
 const image = require("@/assets/images/Image.png");
 const sendimage = require("@/assets/images/Group18.png");
-const Multiply = require("@/assets/images/Multiply.png");
+const fb = require("@/assets/images/fb.png");
+const wa = require("@/assets/images/wa.png");
+const yt = require("@/assets/images/yt.png");
+const msger = require("@/assets/images/msger.png");
+const tt = require("@/assets/images/twitter.png");
+const it = require("@/assets/images/instagram.png");
+const logo = require("@/assets/images/logo2.png");
 
 export default {
   name: "Home",
@@ -201,18 +311,20 @@ export default {
       image2,
       image,
       sendimage,
-      Multiply,
+      logo,
+      it,
+      tt,
+      wa,
+      fb,
+      msger,
+      yt
     };
   },
-  updated() {
-    alert(1)
-  },
+  mounted() {},
   methods: {
-    showModal1() {
-      $("#exampleModal").modal("show");
-    },
-    hideModal1() {
+    readMore() {
       $("#exampleModal").modal("hide");
+      $("#exampleModal2").modal("show");
     },
     // hideModal2() {
     //   $("#exampleModal2").modal("hide");
@@ -224,12 +336,17 @@ export default {
     showLogin() {
       $(location).attr('href','#/web/login')
     },
+    showTerms() {
+      $(location).attr('href','#/web/terms')
+    },
+    showPrivacy() {
+      $(location).attr('href','#/web/privacy')
+    },
   },
 };
 </script>
 <style scoped lang="scss">
-.home {
-}
+
 .readMore {
   width: 152px;
   height: 43px;
@@ -315,8 +432,7 @@ export default {
       width: 123px;
       height: 87px;
     }
-    .rightIcon2 {
-    }
+
     .rightIcon3 {
       position: absolute;
       top: 20px;
@@ -453,18 +569,145 @@ export default {
   .right {
     flex: 1;
     background: #f9f9f9;
-
     .main {
       padding-top: 150px;
       padding-left: 30px;
       padding-right: 100px;
-      .sendimage {
-        margin-top: 50px;
-        img {
+      .sendimage{
+        margin-top:50px;
+        img{
           width: 200px;
         }
       }
     }
   }
 }
+.footer {
+  flex: 1;
+  height: 340px;
+  background: #C9E2A4;
+  display: flex;
+  .logo{
+    max-width: 80px;
+    max-height: 80px;
+    padding-left: 30px;
+    padding-top: 10px;
+    position: absolute;
+  }
+  .footer-first-heading{
+    display: inline;
+    width: 25%;
+      .footer-first{
+      padding-top: 70px;
+      padding-left: 40px;
+      font-weight: bold;
+      font-size: 23px;
+      font-family: Arial Black;
+      color: #60D5E1;
+      flex: 1;
+      text-align: left;
+    }
+  }
+  .footer-second-heading{
+      display: inline;
+      width: 25%;
+    .footer-second{
+      padding-top: 70px;
+      padding-left: 0px;
+      font-weight: bold;
+      font-size: 23px;
+      font-family: Arial Black;
+      color: #60D5E1;
+      flex: 1;
+      text-align: left;
+
+    }
+  }
+  .footer-third-heading{
+      display: inline;
+      width: 25%;
+    .footer-third{
+      padding-top: 70px;
+      padding-left: 0px;
+      font-weight: bold;
+      font-size: 23px;
+      font-family: Arial Black;
+      color: #60D5E1;
+      flex: 1;
+      text-align: left;
+    }
+  }
+
+  .footer-fourth-heading{
+      display: inline;
+      width: 25%;
+      padding-right: 80px;
+    .footer-fourth{
+      padding-top: 70px;
+      padding-left: 0px;
+      font-weight: bold;
+      font-size: 23px;
+      font-family: Arial Black;
+      color: #60D5E1;
+      flex: 1;
+      text-align: left;
+    }
+    .links{
+      font-weight: bold;
+      font-size: 20px
+    }
+    .buttonrow{
+      border-radius: 50%;
+      display: inline;
+    }
+  }
+  .footer-writing{
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    padding-left: 40px;
+    font-weight: bold;
+  }
+  .footer-writing2{
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .button {
+    background-color: #EBBA79;
+    border: none;
+    color: grey;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 4px;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 200px;
+}
+a {
+  color: Black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ .sm-icons {
+    width: 10%;
+    margin: 2px 3px 0px 30px;
+  }
+
+  .footer-tail {
+    width: 15%;
+    height: 40%;
+    -webkit-margin-end: -436px;
+    margin-left: 270px;
+    opacity: 25%;
+  }
+} 
 </style>
