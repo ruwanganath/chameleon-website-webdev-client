@@ -88,7 +88,6 @@ left: 12px;
 }
 
 .bottom-right {
-  width: 40%;
   position: absolute;
   bottom: 180px;
   right: 12px;
