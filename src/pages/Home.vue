@@ -378,22 +378,22 @@ export default {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+  height: 90vh;
   .title {
     font-size: 64px;
     font-weight: 600;
     color: #343434;
-    padding-left: 130px;
-    padding-top: 260px;
+    padding-left: 70px;
+    padding-top: 150px;
   }
   .explain {
     font-weight: 500;
     margin-top: 35px;
     width: 460px;
     font-size: 36px;
-    padding-left: 130px;
-    padding-top: 0px;
-    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-top: 0;
+    padding-bottom: 15px;
   }
   .button {
     width: 150px;
