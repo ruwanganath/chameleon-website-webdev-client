@@ -1,42 +1,35 @@
 <template>
-<div class="main">
-
-
-  <div class="fir" >
-    <img :src= "melbourneCity" alt="melboure" />
-    <div class="bottom-left">
-      <h1>SMART CITIES OPEN DATA</h1>
+  <div class="main">
+    <div class="fir">
+      <img :src= "melbourneCity" alt="melboure" />
+      <div class="bottom-left">
+        <h1>SMART CITIES OPEN DATA</h1>
+      </div>
+      <div class="read-more">
+        <button type="read-more" name="button">Read More</button>
+      </div>
     </div>
-    <div class="read-more">
-      <button type="read-more" name="button">Read More</button>
+
+    <div class="fir" >
+      <img :src= "ev" alt="ev charging" />
+      <div class="bottom-right" style = "right: 5px" >
+        <h1>EV CHARGER PLACEMENT</h1>
+      </div>
+      <div class="read-more-left">
+        <button type="read-more" name="button">Read More</button>
+      </div>
+    </div>
+
+    <div class="fir" >
+      <img :src= "suburb" alt="melboure" />
+      <div class="bottom-left">
+        <h1>LOCATE A SOCKET</h1>
+      </div>
+      <div class="read-more">
+        <button type="read-more" name="button">Read More</button>
+      </div>
     </div>
   </div>
-<div/>
-
-<div class="fir" >
-  <img :src= "ev" alt="ev charging" />
-  <div class="bottom-right" style = "right: 5px" >
-    <h1>EV CHARGER PLACEMENT</h1>
-  </div>
-  <div class="read-more-left">
-    <button type="read-more" name="button">Read More</button>
-  </div>
-</div>
-<div/>
-
-<div class="fir" >
-  <img :src= "suburb" alt="melboure" />
-  <div class="bottom-left">
-    <h1>LOCATE A SOCKET</h1>
-  </div>
-  <div class="read-more">
-    <button type="read-more" name="button">Read More</button>
-  </div>
-</div>
-<div/>
-
-
-</div/>
 </template>
 
 <script>
@@ -61,7 +54,7 @@ position: relative;
 text-align:left;
 color: white;
 }
-img {
+.fir img {
   width: 100%;
   height: 900px;
 }
@@ -127,6 +120,5 @@ right: 10px;
   text-decoration: underline;
   color: white;
 }
-
 
 </style>
