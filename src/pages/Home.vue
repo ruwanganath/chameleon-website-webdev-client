@@ -226,6 +226,7 @@
     </div>
 
     <div class="footer">
+        <img class="footer-tail" :src="pngwing1" alt="" />
         <div class="footer-image">
           <img class="logo" :src="logo" alt="" />
         </div>
@@ -248,18 +249,18 @@
 
         <div class="footer-third-heading">
           <div class="footer-third">HELPFUL LINKS</div>
-            <div class="footer-writing2">Privacy Policy</div>
-            <div class="footer-writing2">Teams and Conditions</div>
+            <div class="footer-writing2" @click="showPrivacy">Privacy Policy</div>
+            <div class="footer-writing2" @click="showTerms">Teams and Conditions</div>
           <div class="footer-third">CONNECT WITH US</div>
             <div class="button-row-one">
-              <button class="buttonrow">Facebook</button>
-              <button class="buttonrow">Twitter</button>
-              <button class="buttonrow">Instragram</button>
+              <img class="sm-icons" :src="it" alt=""/>
+              <img class="sm-icons" :src="fb" alt="" />
+              <img class="sm-icons" :src="tt" alt="" />
             </div>
             <div class="button-row-two">
-              <button class="buttonrow">Youtube</button>
-              <button class="buttonrow">Whats Up</button>
-              <button class="buttonrow">Messagers</button>
+              <img class="sm-icons" :src="yt" alt="" />
+              <img class="sm-icons" :src="wa" alt="" />
+              <img class="sm-icons" :src="msger" alt="" />
             </div>
         </div>
 
@@ -289,8 +290,13 @@ const Ellipse1 = require("@/assets/images/Ellipse1.png");
 const image2 = require("@/assets/images/image2.png");
 const image = require("@/assets/images/Image.png");
 const sendimage = require("@/assets/images/Group18.png");
+const fb = require("@/assets/images/fb.png");
+const wa = require("@/assets/images/wa.png");
+const yt = require("@/assets/images/yt.png");
+const msger = require("@/assets/images/msger.png");
+const tt = require("@/assets/images/twitter.png");
+const it = require("@/assets/images/instagram.png");
 const logo = require("@/assets/images/logo2.png");
-
 
 export default {
   name: "Home",
@@ -305,7 +311,13 @@ export default {
       image2,
       image,
       sendimage,
-      logo
+      logo,
+      it,
+      tt,
+      wa,
+      fb,
+      msger,
+      yt
     };
   },
   mounted() {},
@@ -323,6 +335,12 @@ export default {
     // },
     showLogin() {
       $(location).attr('href','#/web/login')
+    },
+    showTerms() {
+      $(location).attr('href','#/web/terms')
+    },
+    showPrivacy() {
+      $(location).attr('href','#/web/privacy')
     },
   },
 };
@@ -678,5 +696,18 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
-}
+
+ .sm-icons {
+    width: 10%;
+    margin: 2px 3px 0px 30px;
+  }
+
+  .footer-tail {
+    width: 15%;
+    height: 40%;
+    -webkit-margin-end: -436px;
+    margin-left: 270px;
+    opacity: 25%;
+  }
+} 
 </style>
