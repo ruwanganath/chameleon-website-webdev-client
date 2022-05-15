@@ -1,13 +1,9 @@
 <template>
   <div class="home">
     <div class="first">
-      <div class="title">welcome to Chameleon</div>
+      <div class="title">Welcome to Chameleon</div>
       <div class="explain">Striving to create a smarter world!</div>
-
-
-      <div class="button">Login</div>
-
-
+      <div class="button" @click="showLogin">Login</div>
       <div class="right">
         <div
           class="rightIcon"
@@ -225,6 +221,9 @@ export default {
     //   $("#exampleModal").modal("hide");
     //   $("#exampleModal2").modal("show");
     // },
+    showLogin() {
+      $(location).attr('href','#/web/login')
+    },
   },
 };
 </script>
@@ -238,6 +237,10 @@ export default {
   line-height: 43px;
   background: #feb95f;
   border-radius: 17px;
+  box-shadow: 0px -1px 1px 0 #989a9a inset,
+            0px 1px 1px 1px rgb(164, 164, 164),
+            0 0 0 1px rgb(249, 215, 103),
+            0 1px 1px 1px rgb(161, 161, 161);
 }
 .cancel {
   background: #b9d78a;
@@ -246,34 +249,41 @@ export default {
   position: absolute;
   top: -22px;
   right: -10px;
+
   img {
     width: 35px;
     height: 35px;
   }
+  
 }
 .first {
-  padding-left: 30px;
   background-image: url("../assets/images/Image1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
   .title {
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 64px;
+    font-weight: 600;
+    color: #343434;
+    padding-left: 130px;
+    padding-top: 260px;
   }
   .explain {
-    font-weight: bold;
-    margin-top: 40px;
-    width: 150px;
+    font-weight: 500;
+    margin-top: 35px;
+    width: 460px;
+    font-size: 36px;
+    padding-left: 130px;
+    padding-top: 0px;
+    padding-bottom: 30px;
   }
   .button {
-    margin-top: 30px;
-    width: 191px;
-    height: 51px;
+    width: 150px;
+    height: 40px;
     background: #faad4a;
     text-align: center;
-    line-height: 51px;
+    line-height: 42px;
     color: #fff;
     border-radius: 20px;
     &:hover {
@@ -281,18 +291,25 @@ export default {
       background: #fff;
       color: #faad4a;
     }
+    box-shadow: 0px -1px 2px 0 #065881 inset,
+              0px 1px 1px 1px #ccc,
+              0 0 0 6px #fff,
+              0 2px 12px 8px #ddd;
+    margin-left: 165px;
+    display: block;
+    float: left;
   }
   .button-cover {
-    width: 140px;
+    width: 150px;
     background: #ff9500;
     color: #fff;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .right {
     text-align: right;
     text-align: -webkit-right;
     padding-right: 40px;
-    margin-top: 200px;
+    margin-top: 100px;
     .rightIcon {
       position: relative;
       width: 123px;
@@ -319,22 +336,23 @@ export default {
 }
 .second {
   padding: 40px 40px;
+  margin-top: 60px;
   .head {
     display: flex;
     align-items: center;
     div:first-child {
       width: 20%;
-      height: 2px;
+      height: 3px;
       background: #99c854;
     }
     div:nth-child(2) {
       padding: 0 20px;
-      font-size: 35px;
+      font-size: 55px;
       font-weight: bold;
     }
     div:last-child {
       flex: 1;
-      height: 2px;
+      height: 3px;
       background: #99c854;
     }
   }
@@ -351,22 +369,23 @@ export default {
 }
 .three {
   padding: 40px 40px;
+  margin-top: 60px;
   .head {
     display: flex;
     align-items: center;
     div:first-child {
       flex: 1;
-      height: 2px;
+      height: 3px;
       background: #99c854;
     }
     div:nth-child(2) {
       padding: 0 20px;
-      font-size: 35px;
+      font-size: 55px;
       font-weight: bold;
     }
     div:last-child {
       flex: 1;
-      height: 2px;
+      height: 3px;
       background: #99c854;
     }
   }
