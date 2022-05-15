@@ -248,10 +248,10 @@
 
         <div class="footer-second-heading">
           <div class="footer-second">EXPLORE</div>
-            <div><a href="#/web/our-services" class="nav-link" style="color: Black"> Our services </a></div>
-            <div><a href="#/web/portfolio" class="nav-link" style="color: Black"> Portfolio </a></div>
-            <div><a href="#/web/resources" class="nav-link" style="color: Black"> Resources </a></div>
-            <div><a href="#/web/about-us" class="nav-link" style="color: Black"> About us </a></div>
+            <div><a href="#/web/our-services"> Our services </a></div>
+            <div><a href="#/web/portfolio"> Portfolio </a></div>
+            <div><a href="#/web/resources"> Resources </a></div>
+            <div><a href="#/web/about-us"> About us </a></div>
         </div>
 
         <div class="footer-third-heading">
@@ -622,6 +622,10 @@ export default {
     border-radius: 12px;
     width: 200px;
 }
-
+a {
+  color: Black;
+  font-weight: bold;
+  text-decoration: none;
+}
 }
 </style>
