@@ -118,12 +118,14 @@ export default {
       font-size: 15px;
       font-family: 'Poppins', sans-serif;
       font-weight: 100;
+     
 
       p {
-        margin-top: 10px;
-        font-size: 18px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 100;
+          margin-top: 13px;
+          font-size: 24px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          text-align: center;
         
       }
       
@@ -137,6 +139,7 @@ export default {
         float: left;
         width: 25%;
         padding: 30px;
+        text-align: center;
         
       }
 
@@ -145,6 +148,7 @@ export default {
       content: "";
       clear: both;
       display: table;
+
     }
 @keyframes growProgressBar {
   0%, 33% { --pgPercentage: 0; }
@@ -189,19 +193,22 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  text-align: center;
+  justify-content: space-evenly;  
 }
     
   }  
   .shape{
-        text-align:center;
-        background-color:#99c854;
-        width:40%;
-        height:20px;
-        line-height:19px;
-        color:rgb(12, 4, 4);
-        margin:20px auto;
-        position:relative;
-        border-radius: 25px;
+          text-align: center;
+          background-color: #99c854;
+          width: 70%;
+          height: 30px;
+          line-height: 30px;
+          color: #0c0404;
+          margin: 20px auto;
+          position: relative;
+          border-radius: 25px;
+          font-size: 24px;
       }
       .shape:before{
         content:"";
@@ -214,24 +221,17 @@ body {
         
       }
 
-
-
-
-
-
 }
  /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column1 {
-      float: right;
-      width: 33.3%;
-      padding: 80px;
-      
+      float: left;
+      padding-top: 80px;  
+      width:200px;
+      justify-content: space-evenly;
+      margin-left:250px;
     }
 
-    /* Clear floats after image containers */
-    .row1::after {
-      content: "";
-      clear: both;
-      display: table;
+    .row1{
+      justify-content: space-evenly;
     }
 </style>
