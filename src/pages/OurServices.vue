@@ -114,52 +114,31 @@ export default {
     }
   }
   .main {
-    margin-top: 50px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-
-    p {
-      margin-top: 10px;
-      font-size: 18px;
+      margin-top: 50px;
+      font-size: 15px;
       font-family: 'Poppins', sans-serif;
       font-weight: 100;
-      
-    }
-    .shape{
-  text-align:center;
-  background-color:#99c854;
-  width:40%;
-  height:20px;
-  line-height:19px;
-  color:rgb(12, 4, 4);
-  margin:20px auto;
-  position:relative;
-  border-radius: 25px;
-}
-.shape:before{
-  content:"";
-  width:0px;
-  height:0px;
- 
-  position:absolute;
-  
-  
-  
-}
 
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        
+      }
+      
 
    
   
 
     
-    /* Three image containers (use 25% for four, and 50% for two, etc) */
-    .column {
-      float: right;
-      width: 25%;
-      padding: 30px;
-      
-    }
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 30px;
+        
+      }
 
     /* Clear floats after image containers */
     .row::after {
@@ -213,6 +192,33 @@ body {
 }
     
   }  
+  .shape{
+        text-align:center;
+        background-color:#99c854;
+        width:40%;
+        height:20px;
+        line-height:19px;
+        color:rgb(12, 4, 4);
+        margin:20px auto;
+        position:relative;
+        border-radius: 25px;
+      }
+      .shape:before{
+        content:"";
+        width:0px;
+        height:0px;
+      
+        position:absolute;
+        
+        
+        
+      }
+
+
+
+
+
+
 }
  /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column1 {
