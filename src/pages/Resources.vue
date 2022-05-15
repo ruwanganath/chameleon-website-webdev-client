@@ -7,7 +7,7 @@
     </div>
     <div class="main">
       <div class="calendar-box content-box">
-        <b-calendar v-model="value" hide-header locale="en" width="100%" label-help="">
+        <b-calendar v-model="value" hide-header locale="en" width="100%" label-help="" weekday-header-format="long">
         </b-calendar>
       </div>
       <div class="collapse-box content-box">
@@ -46,21 +46,20 @@ export default {
 
       collapseData:[{
         title:'What is an Internet of Things (IoT)Device?',
-        content:'neirong1'
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
       },{
         title:'Where is your company located',
-        content:'neirong2'
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
       },{
         title:'Do you work with international clients?',
-        content:'neirong3'
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
       },{
         title:'How can I engage you for your services?',
-        content:'neirong4'
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
       },{
         title:'Do you provide ongoing support for your systems?',
-        content:'neirong4'
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
       }],
-      text:111111
     }
   },
   mounted(){
@@ -86,6 +85,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .resources{
+  font-family: 'Poppins', sans-serif;
+   color:#3e3e3e;
   height:100%;
   width:100%;
   overflow: hidden;
@@ -97,6 +98,7 @@ export default {
   .head {
     display: flex;
     align-items: center;
+    margin-bottom: 60px;
     div:first-child {
       flex: 1;
       height: 2px;
@@ -115,20 +117,21 @@ export default {
   }
   .main{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     .content-box:nth-child(2){
-      width:430px;
+      width:42%;
     }
     .content-box{
       padding:0px 10px;
       // flex:1;
-      width:40%;
+      width:48%;
 
       flex-shrink: 0;
       align-items: center;
       h2{
-        font-size:30px;
+        font-size:41px;
         font-weight: bold;
+        text-align: right;
       }
       .title{
         display:flex;
@@ -145,8 +148,7 @@ export default {
           border-bottom:2px solid #eff0e5;
           display:flex;
           p{
-            font-size:16px;
-            color:#3e3e3e; 
+            font-size: 24px;
           }
           p:nth-child(1){
             flex:1;
@@ -187,5 +189,21 @@ export default {
 <style>
 .calendar-box .b-calendar .form-control{
   background:#f1f8e6 !important;
+}
+
+.calendar-box .b-calendar .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    height: 55px;
+    padding-top: 10px;
+    border: #dee2e6 1px solid;
 }
 </style>
