@@ -7,7 +7,7 @@
     </div>
     <div class="main">
       <div class="calendar-box content-box">
-        <b-calendar v-model="value" hide-header locale="en" width="100%" label-help="" weekday-header-format="long">
+        <b-calendar v-model="value" hide-header locale="en" width="100%" label-help="">
         </b-calendar>
       </div>
       <div class="collapse-box content-box">
@@ -16,9 +16,7 @@
           <p></p>
           <p>The Chameleon Questions and answers.</p>
         </div>
-
-
-
+        
         <div role="tablist">
           <div v-for="(item,index) in collapseData" :key="index" class="cardBox">
             <h3 @click="toggle(index)" class="titleLink">
@@ -48,20 +46,21 @@ export default {
 
       collapseData:[{
         title:'What is an Internet of Things (IoT)Device?',
-        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        content:'neirong1'
       },{
         title:'Where is your company located',
-        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        content:'neirong2'
       },{
         title:'Do you work with international clients?',
-        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        content:'neirong3'
       },{
         title:'How can I engage you for your services?',
-        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        content:'neirong4'
       },{
         title:'Do you provide ongoing support for your systems?',
-        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        content:'neirong4'
       }],
+      text:111111
     }
   },
   mounted(){
@@ -83,15 +82,13 @@ export default {
       this.value = ''
     }
   }
-  }
+ }
 
-  //
+
 
 </script>
 <style lang="scss" scoped>
 .resources{
-  font-family: 'Poppins', sans-serif;
-   color:#3e3e3e;
   height:100%;
   width:100%;
   overflow: hidden;
@@ -103,7 +100,6 @@ export default {
   .head {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
     div:first-child {
       flex: 1;
       height: 2px;
@@ -122,21 +118,20 @@ export default {
   }
   .main{
     display:flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
     .content-box:nth-child(2){
-      width:42%;
+      width:430px;
     }
     .content-box{
       padding:0px 10px;
       // flex:1;
-      width:48%;
+      width:40%;
 
       flex-shrink: 0;
       align-items: center;
       h2{
-        font-size:41px;
+        font-size:30px;
         font-weight: bold;
-        text-align: right;
       }
       .title{
         display:flex;
@@ -153,7 +148,8 @@ export default {
           border-bottom:2px solid #eff0e5;
           display:flex;
           p{
-            font-size: 24px;
+            font-size:16px;
+            color:#3e3e3e; 
           }
           p:nth-child(1){
             flex:1;
@@ -165,7 +161,6 @@ export default {
       }
     }
   }
-
 
 
   .box2 {
@@ -193,28 +188,8 @@ export default {
 }
 </style>
 
-
 <style>
 .calendar-box .b-calendar .form-control{
   background:#f1f8e6 !important;
 }
-
-.calendar-box .b-calendar .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
-    margin-left: calc(-0.5 * var(--bs-gutter-x));
-    height: 55px;
-    padding-top: 10px;
-    border: #dee2e6 1px solid;
-}
 </style>
-
-
-
