@@ -16,7 +16,9 @@
           <p></p>
           <p>The Chameleon Questions and answers.</p>
         </div>
-        
+
+
+
         <div role="tablist">
           <div v-for="(item,index) in collapseData" :key="index" class="cardBox">
             <h3 @click="toggle(index)" class="titleLink">
@@ -81,7 +83,9 @@ export default {
       this.value = ''
     }
   }
-}
+  }
+
+
 </script>
 <style lang="scss" scoped>
 .resources{
@@ -207,3 +211,4 @@ export default {
     border: #dee2e6 1px solid;
 }
 </style>
+
