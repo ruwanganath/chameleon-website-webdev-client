@@ -85,6 +85,7 @@ export default {
   }
   }
 
+  //
 
 </script>
 <style lang="scss" scoped>
@@ -165,6 +166,8 @@ export default {
     }
   }
 
+
+
   .box2 {
     z-index:-10;
     right:0;
@@ -190,6 +193,7 @@ export default {
 }
 </style>
 
+
 <style>
 .calendar-box .b-calendar .form-control{
   background:#f1f8e6 !important;
@@ -211,4 +215,6 @@ export default {
     border: #dee2e6 1px solid;
 }
 </style>
+
+
 
