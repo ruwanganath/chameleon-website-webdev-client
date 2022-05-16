@@ -16,7 +16,9 @@
           <p></p>
           <p>The Chameleon Questions and answers.</p>
         </div>
-        
+
+
+
         <div role="tablist">
           <div v-for="(item,index) in collapseData" :key="index" class="cardBox">
             <h3 @click="toggle(index)" class="titleLink">
@@ -82,8 +84,10 @@ export default {
       this.value = ''
     }
   }
-}
-</script>
+  }
+
+
+</script>  
 <style lang="scss" scoped>
 .resources{
   height:100%;
@@ -159,6 +163,7 @@ export default {
     }
   }
 
+
   .box2 {
     z-index:-10;
     right:0;
@@ -183,6 +188,8 @@ export default {
   }
 }
 </style>
+
+
 
 <style>
 .calendar-box .b-calendar .form-control{
