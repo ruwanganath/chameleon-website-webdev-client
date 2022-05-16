@@ -38,9 +38,7 @@
             
           </div>
 
-          <div class="shape">
-            Providing Quality IoT Based Solutions
-          </div>
+          
           
         </div>
         <div class="row1">
@@ -58,6 +56,12 @@
             <p>Customer Satisfaction</p>
           </div>
         </div>
+
+
+
+        <div class="shape">
+            Providing Quality IoT Based Solutions
+          </div>
 
       
       
