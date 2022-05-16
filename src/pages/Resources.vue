@@ -60,7 +60,6 @@ export default {
         title:'Do you provide ongoing support for your systems?',
         content:'neirong4'
       }],
-      text:111111
     }
   },
   mounted(){
