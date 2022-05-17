@@ -3,7 +3,7 @@
     <div class="fir">
       <img :src= "melbourneCity" alt="melboure" />
       <div class="bottom-left">
-        <h1>SMART CITIES OPEN DATA</h1>
+        <h1>{{firstHeading}}</h1>
       </div>
       <div class="read-more">
         <button type="read-more" name="button">Read More</button>
@@ -13,7 +13,7 @@
     <div class="fir" >
       <img :src= "ev" alt="ev charging" />
       <div class="bottom-right" style = "right: 5px" >
-        <h1>EV CHARGER PLACEMENT</h1>
+        <h1>{{secondHeading}}</h1>
       </div>
       <div class="read-more-left">
         <button type="read-more" name="button">Read More</button>
@@ -23,7 +23,7 @@
     <div class="fir" >
       <img :src= "suburb" alt="melboure" />
       <div class="bottom-left">
-        <h1>LOCATE A SOCKET</h1>
+        <h1>{{thirdHeading}}</h1>
       </div>
       <div class="read-more">
         <button type="read-more" name="button">Read More</button>
@@ -41,7 +41,10 @@ export default {
     return {
       melbourneCity:require("@/assets/images/melbourne.jpg"),
       ev:require("@/assets/images/ev.jpg"),
-      suburb:require("@/assets/images/suburb.jpg")
+      suburb:require("@/assets/images/suburb.jpg"),
+      firstHeading:"SMART CITIES OPEN DATA",
+      secondHeading:"EV CHARGER PLACEMENT",
+      thirdHeading:"LOCATE A SOCKET"
 
     }
   }
@@ -65,7 +68,7 @@ color: white;
   left: 12px;
 }
 .bottom-left h1{
-  font-size : 120px;
+  font-size : 5vw;
   font-weight: bold;
   text-shadow: 2px 2px black;
 }
@@ -88,6 +91,7 @@ left: 12px;
 }
 
 .bottom-right {
+  width: 40%;
   position: absolute;
   bottom: 180px;
   right: 12px;
@@ -95,7 +99,7 @@ left: 12px;
 }
 
 .bottom-right h1{
-  font-size : 120px;
+  font-size : 5vw;
   font-weight: bold;
   text-shadow: 2px 2px black;
 }
