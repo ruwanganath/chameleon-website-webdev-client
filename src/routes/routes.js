@@ -4,6 +4,7 @@ import Home from '../pages/Home.vue'
 import AboutUs from '../pages/AboutUs.vue'
 import OurServices from '../pages/OurServices.vue'
 import Portfolio from '../pages/Portfolio.vue'
+import PortfolioP3 from '../pages/PortfolioP3.vue'
 import Resources from '../pages/Resources.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 
@@ -39,6 +40,11 @@ const routes = [
         path: 'portfolio',
         name: 'Portfolio',
         component: Portfolio
+      },
+      {
+        path: 'portfolioP3',
+        name: 'PortfolioP3',
+        component: PortfolioP3
       },
       {
         path: 'our-services',
