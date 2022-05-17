@@ -17,7 +17,10 @@
     </div>
 
     <div class="close">
-      <button type="read-more" name="button"></button>
+      <router-link to="/web/portfolio" v-slot="{href, route, navigate}">
+        <button :href="href" @click="navigate" class='whatever-you-want'>
+        </button>
+      </router-link>
     </div>
 
   </div>

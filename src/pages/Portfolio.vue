@@ -6,7 +6,11 @@
         <h1>{{firstHeading}}</h1>
       </div>
       <div class="read-more">
-        <button type="read-more" name="button">Read More</button>
+        <router-link to="/web/portfolioP1" v-slot="{href, route, navigate}">
+          <button :href="href" @click="navigate" class='whatever-you-want'>
+            Read More
+          </button>
+        </router-link>
       </div>
     </div>
 
@@ -16,7 +20,12 @@
         <h1>{{secondHeading}}</h1>
       </div>
       <div class="read-more-left">
-        <button type="read-more" name="button">Read More</button>
+        <router-link to="/web/portfolioP2" v-slot="{href, route, navigate}">
+          <button :href="href" @click="navigate" class='whatever-you-want'>
+            Read More
+          </button>
+        </router-link>
+        <!-- <button type="read-more" name="button">Read More</button> -->
       </div>
     </div>
 
@@ -26,7 +35,11 @@
         <h1>{{thirdHeading}}</h1>
       </div>
       <div class="read-more">
-        <button type="read-more" name="button">Read More</button>
+        <router-link to="/web/portfolioP3" v-slot="{href, route, navigate}">
+          <button :href="href" @click="navigate" class='whatever-you-want'>
+            Read More
+          </button>
+        </router-link>
       </div>
     </div>
   </div>
