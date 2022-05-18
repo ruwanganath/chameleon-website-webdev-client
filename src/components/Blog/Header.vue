@@ -54,7 +54,7 @@ header {
         }
 
         h1 {
-            color: #171717;
+            color: #9acb48;
             font-size: 72px;
             margin: 0;
         }
