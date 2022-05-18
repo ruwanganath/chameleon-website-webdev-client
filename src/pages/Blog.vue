@@ -1,18 +1,23 @@
 <template>
 <div class="">
+  
   <Header/>
-
+  <Latest/>
 
 </div>
 </template>
 
 <script>
 import Header from '../components/Blog/Header'
+import Latest from '../components/Blog/Latest'
+
 
 export default {
   name: "Blog",
   components:{
     Header,
+    Latest
+
   },
   data() {
     return {
