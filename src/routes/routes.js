@@ -8,6 +8,7 @@ import PortfolioP1 from '../pages/PortfolioP1'
 import PortfolioP2 from '../pages/PortfolioP2'
 import PortfolioP3 from '../pages/PortfolioP3'
 import Resources from '../pages/Resources.vue'
+import Blog from '../pages/Blog.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 
 import Login from '../pages/Login.vue'
@@ -68,6 +69,12 @@ const routes = [
         path: 'resources',
         name: 'Resources',
         component: Resources
+      },
+      {
+        path: 'blog',
+        name: 'Blog',
+        component: Blog
+
       },
       {
         path: 'login',
