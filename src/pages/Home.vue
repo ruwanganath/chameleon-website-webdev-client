@@ -5,7 +5,7 @@
       <div class="explain">Striving to create a smarter world!</div>
       <div class="button" @click="showLogin">Login</div>
       <div class="right">
-        <div class="rightIcon" data-toggle="modal" data-target="#exampleModal">
+        <div class="rightIcon" data-toggle="modal" data-target="#exampleModal"  @click="showModal1">
           <img class="rightIcon2" :src="Ellipse" alt="" />
           <img class="rightIcon3" :src="Megaphone" alt="" />
         </div>
@@ -23,75 +23,20 @@
                 <h5 class="modal-title" id="exampleModalLabel">
                   New Product Coming Soon!
                 </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                <div @click="hideModal1" class="cancel">
+                  <img :src="Multiply" alt="" />
+                </div>
               </div>
               <div class="modal-body">
                 Get ready for the revolutionary development in the IoT industry.
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-warning active"
-                  data-toggle="modal"
-                  data-target="#exampleModal2"
-                  @click="readMore"
-                >
-                  Read More
-                </button>
+                <div class="readMore" @click="showModal1">Read More</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div
-          class="modal fade"
-          id="exampleModal2"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  Get more Updates!
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-warning active"
-                  data-toggle="modal"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -297,6 +242,8 @@ const msger = require("@/assets/images/msger.png");
 const tt = require("@/assets/images/twitter.png");
 const it = require("@/assets/images/instagram.png");
 const logo = require("@/assets/images/logo2.png");
+const Multiply = require("@/assets/images/Multiply.png");
+
 
 export default {
   name: "Home",
@@ -317,22 +264,18 @@ export default {
       wa,
       fb,
       msger,
-      yt
+      yt,
+      Multiply
     };
   },
   mounted() {},
   methods: {
-    readMore() {
-      $("#exampleModal").modal("hide");
-      $("#exampleModal2").modal("show");
+     showModal1() {
+      $("#exampleModal").modal("show");
     },
-    // hideModal2() {
-    //   $("#exampleModal2").modal("hide");
-    // },
-    // showModal2() {
-    //   $("#exampleModal").modal("hide");
-    //   $("#exampleModal2").modal("show");
-    // },
+    hideModal1() {
+      $("#exampleModal").modal("hide");
+    },
     showLogin() {
       $(location).attr('href','#/web/login')
     },
