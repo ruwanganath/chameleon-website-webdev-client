@@ -5,41 +5,31 @@
         <div>Our Services</div>
         <div></div>
       </div>
-
-      
+     
       <div class="main">
         <div class="row">
           <div class="column">
-            
               <img :src="services1" alt="img1" width="260" height="250">
-              <p >IoT services, Planning and Operations</p>
-            
-            
-          </div>
-          <div class="column">
-            
-              <img :src="services2" alt="img2" width="260" height="250">
-              <p>IoT Support Services</p>
-            
-            
-          </div>
-          <div class="column">
-            
-              <img :src="services3" alt="img3" width="260" height="250">
-              <p>Smart Homes and Offices</p>
-            
-           
-          </div>
-          <div class="column">
-            
-              <img :src="services4" alt="img4" width="260" height="250">
-              <p >IoT Based Energy Management Systems</p>
-            
-            
+              <p >IoT services, Planning and Operations</p>           
           </div>
 
-          
-          
+          <div class="column">            
+              <img :src="services2" alt="img2" width="260" height="250">
+              <p>IoT Support Services</p>
+          </div>
+
+          <div class="column">
+              <img :src="services3" alt="img3" width="260" height="250">
+              <p>Smart Homes and Offices</p>
+          </div>
+
+          <div class="column">
+              <img :src="services4" alt="img4" width="260" height="250">
+              <p >IoT Based Energy Management Systems</p>
+          </div>
+        </div>
+         <div class="shape">
+            Providing Quality IoT Based Solutions
         </div>
         <div class="row1">
           <div class="column1">
@@ -55,18 +45,7 @@
             <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
             <p>Customer Satisfaction</p>
           </div>
-        </div>
-
-
-
-        <div class="shape">
-            Providing Quality IoT Based Solutions
-          </div>
-
-      
-      
-      
-      
+        </div>       
       </div>
       
     </div>
@@ -134,10 +113,6 @@ export default {
       }
       
 
-   
-  
-
-    
       /* Three image containers (use 25% for four, and 50% for two, etc) */
       .column {
         float: left;
@@ -214,17 +189,6 @@ body {
           border-radius: 25px;
           font-size: 24px;
       }
-      .shape:before{
-        content:"";
-        width:0px;
-        height:0px;
-      
-        position:absolute;
-        
-        
-        
-      }
-
 }
  /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column1 {

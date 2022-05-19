@@ -6,7 +6,7 @@
         <h1>{{firstHeading}}</h1>
       </div>
       <div class="read-more">
-        <router-link to="/web/portfolioP1" v-slot="{href, route, navigate}">
+        <router-link to="/web/portfolioP1" v-slot="{href, navigate}">
           <button :href="href" @click="navigate" class='whatever-you-want'>
             Read More
           </button>
@@ -20,7 +20,7 @@
         <h1>{{secondHeading}}</h1>
       </div>
       <div class="read-more-left">
-        <router-link to="/web/portfolioP2" v-slot="{href, route, navigate}">
+        <router-link to="/web/portfolioP2" v-slot="{href, navigate}">
           <button :href="href" @click="navigate" class='whatever-you-want'>
             Read More
           </button>
@@ -35,7 +35,7 @@
         <h1>{{thirdHeading}}</h1>
       </div>
       <div class="read-more">
-        <router-link to="/web/portfolioP3" v-slot="{href, route, navigate}">
+        <router-link to="/web/portfolioP3" v-slot="{href, navigate}">
           <button :href="href" @click="navigate" class='whatever-you-want'>
             Read More
           </button>
@@ -46,7 +46,6 @@
 </template>
 
 <script>
-// const melbourneCity = require("@/assets/images/melbourne.jpg")
 
 export default {
   name: "Portfolio",
@@ -58,7 +57,6 @@ export default {
       firstHeading:"SMART CITIES OPEN DATA",
       secondHeading:"EV CHARGER PLACEMENT",
       thirdHeading:"LOCATE A SOCKET"
-
     }
   }
 }

@@ -354,10 +354,6 @@ export default {
   line-height: 43px;
   background: #feb95f;
   border-radius: 17px;
-  box-shadow: 0px -1px 1px 0 #989a9a inset,
-            0px 1px 1px 1px rgb(164, 164, 164),
-            0 0 0 1px rgb(249, 215, 103),
-            0 1px 1px 1px rgb(161, 161, 161);
 }
 .cancel {
   background: #b9d78a;
