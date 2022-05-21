@@ -28,9 +28,7 @@
               <p >IoT Based Energy Management Systems</p>
           </div>
         </div>
-         <div class="shape">
-            Providing Quality IoT Based Solutions
-        </div>
+        
         <div class="row1">
           <div class="column1">
             <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
@@ -45,7 +43,11 @@
             <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
             <p>Customer Satisfaction</p>
           </div>
-        </div>       
+        </div>     
+        
+        <div class="shape">
+            Providing Quality IoT Based Solutions
+        </div>
       </div>
       
     </div>
@@ -87,7 +89,7 @@ export default {
     }
     div:nth-child(2) {
       padding: 0 20px;
-      font-size: 35px;
+      font-size: 50px;
       font-weight: bold;
     }
     div:last-child {
@@ -180,7 +182,7 @@ body {
   .shape{
           text-align: center;
           background-color: #99c854;
-          width: 70%;
+          width: 80%;
           height: 30px;
           line-height: 30px;
           color: #0c0404;
@@ -188,18 +190,21 @@ body {
           position: relative;
           border-radius: 25px;
           font-size: 24px;
+          display:inline-block;
+          margin-left: 100px;
       }
 }
  /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column1 {
       float: left;
-      padding-top: 80px;  
+      padding-top: 60px;  
       width:200px;
       justify-content: space-evenly;
-      margin-left:250px;
+      margin-left:200px;
     }
 
     .row1{
-      justify-content: space-evenly;
+      display: inline-block;
+      height: 400px;
     }
 </style>

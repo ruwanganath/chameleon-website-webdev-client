@@ -180,8 +180,8 @@
             <div class="footer-writing">Striving to Create a</div>
             <div class="footer-writing">Smarter World!</div>
           <div class="footer-first">CONTACT US</div>
-            <div class="footer-writing">+61 111 111 111</div>
-            <div class="footer-writing">Chameleon@gmail.com</div>
+            <div class="footer-writing">+61 3 9244 6100</div>
+            <div class="footer-writing">chameleon@deakin.edu.au</div>
         </div>
 
         <div class="footer-second-heading">

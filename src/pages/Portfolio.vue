@@ -56,7 +56,7 @@ export default {
       suburb:require("@/assets/images/suburb.jpg"),
       firstHeading:"SMART CITIES OPEN DATA",
       secondHeading:"EV CHARGER PLACEMENT",
-      thirdHeading:"LOCATE A SOCKET"
+      thirdHeading:"CHAMELEON WEBSITE"
     }
   }
 }

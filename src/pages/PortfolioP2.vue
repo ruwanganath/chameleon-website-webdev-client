@@ -1,112 +1,89 @@
 <template>
-<div class="p1">
-  <div class="portfolio-one">
+  <div class="three">
+      <div class="head">
+        <div></div>
+          <div>EV Charger Placement</div>
+        <div></div>
+      </div>
+      <div class="main">
+        <p>The EV Charger Placement project is also a sub-project of the EV Adoption Tools initiative. The goal of this sub-project is to use community data such as population, traffic and transit statistics to predict where would be the most suitable to install new charging stations so that they are well located in relation to other stations and have activities or facilities nearby to provide an adequate location to stop and charge. There will also be considerations for nearby residents to improve business foot traffic whilst reducing residential areas from unnecessary visitors. These locations will also be cross-referenced with existing or planned infrastructure to ensure that the stations power requirements can be adequately supported.
+The goal of this sub-project is to use community data (population, traffic, transit etc) to predict where would be the most mutually beneficial place to install new charging stations so that: </p>
+        <ul>
+          <li>-	Stations are well located in relation to other charging stations</li> 
+          <li>-	People have other reasons to stop there (landmark or facility that people spend time at) </li>
+          <li>-	Residents benefit from the installation (business see increased foot traffic & residents are spared extra traffic) </li>
+          <li>-	Existing or planned infrastructure can accommodate the stations (power requirements) </li>
+        </ul>
 
-
-    <img :src="ev" alt="melboure" />
-    <div class="description-left">
-      <p>{{description}}</p>
-    </div>
-
-    <div class="heading-left">
-      <h1>{{heading}}</h1>
-    </div>
-
-    <div class="video-p1">
-      <iframe :src="videoLink" width="740" height="480" allow="autoplay"></iframe>
-    </div>
-
-    <div class="close">
-      <router-link to="/web/portfolio" v-slot="{href, navigate}">
-        <button :href="href" @click="navigate" class='whatever-you-want'>
-        </button>
-      </router-link>
-    </div>
-
+        <p>This project will primarily be a data science project that will include: </p>
+         <ul>
+          <li>-	Identifying data sets that can support this decision-making process. This will include a research process that will determine whether the required data sets are available</li>
+          <li>-	The outcomes here will be creating a dashboard and possibly an application or machine learning model that provides these recommendations</li>
+        </ul>  
+        <div class="video-p1">
+          <iframe :src="videoLink" width="740" height="480" allow="autoplay"></iframe>
+        </div>
+      </div>
   </div>
-</div>
 </template>
-
 <script>
-// const melbourneCity = require("@/assets/images/melbourne.jpg")
-
 export default {
   name: "PortfolioP2",
   data() {
     return {
-      ev:require("@/assets/images/ev.jpg"),
-      heading: "EV CHARGER PLACEMENT",
-      description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      videoLink: "https://player.vimeo.com/video/209810458?h=5147ab1d32&title=0&byline=0&portrait=0",
-
-
-
+     videoLink: "https://video.deakin.edu.au/media/t/1_5msw6mc6"
     }
   }
 }
 </script>
+<style scoped lang="scss">
+.three {
+  padding: 40px 40px;
+  .head {
+    display: flex;
+    align-items: center;
+      div:first-child {
+        flex: 1;
+        height: 2px;
+        background: #99c854;
+      }
+      div:nth-child(2) {
+        padding: 0 20px;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      div:last-child {
+        flex: 0;
+        height: 2px;
+        background: #99c854;
+      }
+  }
+  .main {
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 
-<style scoped>
-.portfolio-one {
-  position: relative;
-  text-align: left;
+      p {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+      }
+      ul li {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        list-style-type: none;
+        margin:10px 5px;
+      }
+    .video-p1 {
+      width:100%;
+      margin-top:40px;
 
-}
-
-.portfolio-one img {
-  width: 100%;
-  height: 63rem;
-  object-fit: cover;
-  opacity: 0.6;
-}
-
-.description-left {
-  width: 40%;
-  position: absolute;
-  bottom: 30rem;
-  left: 3rem;
-}
-
-.description-left p {
-  color: black;
-  font-size: 1vw;
-  font-weight: bold;
-}
-
-.heading-left {
-  width: 40%;
-  position: absolute;
-  bottom: 11.25rem;
-  left: 3rem;
-}
-
-.heading-left h1 {
-  color: black;
-  font-size: 5vw;
-  font-weight: bold;
-  text-shadow: 2px 2px black;
-}
-
-.video-p1 {
-  position: absolute;
-  bottom: 15rem;
-  right: 8rem;
-}
-
-.close{
-position: absolute;
-top:5rem;
-right: 2rem;
-}
-
-.close button{
-  background-image: url("../assets/images/delete.png");
-  width:20px;
-  height:20px;
-  border:none;
-  cursor: pointer;
-  background-size:cover;
-  background-color: transparent;
-
+    } 
+    .video-p1 iframe {
+      width:100%;
+    } 
+  }
 }
 </style>

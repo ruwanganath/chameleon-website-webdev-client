@@ -1,118 +1,87 @@
 <template>
-  <div class="one">
-    <div class="main">
-      <div class="fir">
-        <figure class="tint">
-          <img :src= "suburb" alt="melbourne"/>
-        </figure>
-        <div class="paragraph">
-          <p>The locate a socket sub-project is apart of the EV Adoption Tools 
-          initiative which intends to increase the adoption and accessibility of Electric Vehicles 
-          (EVs) in Australia. Locate a Socket aims to be able to design and implement a mobile app 
-          (Android and IOS) to help consumers identify a nearby charging location. While there are existing apps on 
-          the market that offer this functionality, we believe that we can offer an app that sets it apart from those 
-          apps by implementing features that add value beyond just</p>
-        </div>
-        <h1 class="heading">LOCATE A SOCKET</h1>
-        <video class="video" width="740" height="480" controls>
-          <!-- source src="movie.mp4" type="video/mp4" -->
-          <!-- source src="movie.ogg" type="video/ogg" -->
-        Your browser does not support the video tag.
-        </video>
-        
-        <div class="close">
-          <router-link to="/web/portfolio" v-slot="{href, navigate}">
-              <button :href="href" @click="navigate" class='whatever-you-want'></button>
-          </router-link>
-        </div>
-
+  <div class="three">
+      <div class="head">
+        <div></div>
+          <div>Chameleon Website Development</div>
+        <div></div>
       </div>
-    </div>
+      <div class="main">
+        <p>Like any other company, the Chameleon company requires a website to be its digital public facing space. The main goal of the website is to promote Chameleon’s projects, products, and the services that it provides. As the project implementation progresses additional features and functionalities will be added such as blogs, events calendar, and a clients 'area.</p>
+        <p>The goal for this trimester is to :</p>
+        <ul>
+          <li>Identify the hosting infrastructure and setup the DevOps pipelines</li> 
+          <li>Identify the web development tools and SDLC processes to follow</li>
+          <li>Propose an initial website layout and style</li>
+          <li>Include an initial list of standard pages (including links to other Chameleon projects) and start working on their contents </li>
+          <li>The website pages will be static where the content is hardcoded not database driven</li>
+          <li>A basic subscribe, announcement and login feature with implementation of security</li>
+          <li>User profile section with AI/ML componenet for image recognition</li>
+          <li>Basic steps to integrate a blogging platform for users</li>
+        </ul> 
+        <div class="video-p1">
+          <iframe :src="videoLink" width="740" height="480" allow="autoplay"></iframe>
+        </div>
+      </div>
   </div>
 </template>
-
 <script>
-  export default {
-    name: "PortfolioP3",
-    data() {
-      return {
-        suburb:require("@/assets/images/suburb.jpg"),
-        x:require("@/assets/images/X.png")
-      }
-    }
-}
-</script>
-
-<style scoped lang="scss">
-  .one {
-    padding: 10px 0px;
-    .main {
-      .fir{
-        position: relative;
-        text-align:left;
-        .paragraph {
-          width: 470px;
-          font-size: 20px;
-          position: absolute;
-          text-align:left;
-          top: 276px;
-          left: 70px;
-        }
-        .video {
-          position: absolute;
-          text-align:right;
-          top: 276px;
-          right: 100px;
-        }
-        .heading {
-          width: 600px;
-          font-size: 96px;
-          font-weight: bold;
-          text-shadow: 2px 2px black;
-          position: absolute;
-          text-align:left;
-          top: 450px;
-          left: 64px;
-        }
-        .x {
-          position: absolute;
-          top: 100px;
-          right: 100px;
-          width: 40px;
-          height: 40px;
-        }
-      }
-      img {
-        width: 100%;
-        height: 879px;
-      }
-      .tint:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(255,255,255, 0.5);
-      }
-    }
-
-        
-    .close{
-    position: absolute;
-    top:5rem;
-    right: 2rem;
-    }
-
-    .close button{
-      background-image: url("../assets/images/delete.png");
-      width:20px;
-      height:20px;
-      border:none;
-      cursor: pointer;
-      background-size:cover;
-      background-color: transparent;
-
+export default {
+  name: "PortfolioP3",
+  data() {
+    return {
+     videoLink: "https://video.deakin.edu.au/media/t/1_5msw6mc6"
     }
   }
+}
+</script>
+<style scoped lang="scss">
+.three {
+  padding: 40px 40px;
+  .head {
+    display: flex;
+    align-items: center;
+      div:first-child {
+        flex: 1;
+        height: 2px;
+        background: #99c854;
+      }
+      div:nth-child(2) {
+        padding: 0 20px;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      div:last-child {
+        flex: 0;
+        height: 2px;
+        background: #99c854;
+      }
+  }
+  .main {
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+      p {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+      }
+      ul li {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        list-style-type: none;
+        margin:10px 5px;
+      }
+    .video-p1 {
+      width:100%;
+      margin-top:40px;
+
+    } 
+    .video-p1 iframe {
+      width:100%;
+    } 
+  }
+}
 </style>
