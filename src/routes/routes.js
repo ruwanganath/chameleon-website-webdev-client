@@ -4,7 +4,11 @@ import Home from '../pages/Home.vue'
 import AboutUs from '../pages/AboutUs.vue'
 import OurServices from '../pages/OurServices.vue'
 import Portfolio from '../pages/Portfolio.vue'
+import PortfolioP1 from '../pages/PortfolioP1'
+import PortfolioP2 from '../pages/PortfolioP2'
+import PortfolioP3 from '../pages/PortfolioP3'
 import Resources from '../pages/Resources.vue'
+import Blog from '../pages/Blog.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 
 import Login from '../pages/Login.vue'
@@ -12,6 +16,7 @@ import Register from  '../pages/Register.vue'
 import Profile from  '../pages/Profile.vue'
 import Privacy from  '../pages/Privacy.vue'
 import Terms from  '../pages/Terms.vue'
+
 
 
 const routes = [
@@ -41,6 +46,21 @@ const routes = [
         component: Portfolio
       },
       {
+        path: 'portfolioP1',
+        name: 'PortfolioP1',
+        component: PortfolioP1
+      },
+      {
+        path: 'portfolioP2',
+        name: 'PortfolioP2',
+        component: PortfolioP2
+      },
+      {
+        path: 'portfolioP3',
+        name: 'PortfolioP3',
+        component: PortfolioP3
+      },
+      {
         path: 'our-services',
         name: 'Our Services',
         component: OurServices
@@ -49,6 +69,12 @@ const routes = [
         path: 'resources',
         name: 'Resources',
         component: Resources
+      },
+      {
+        path: 'blog',
+        name: 'Blog',
+        component: Blog
+
       },
       {
         path: 'login',

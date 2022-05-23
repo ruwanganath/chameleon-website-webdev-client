@@ -44,7 +44,7 @@ export default {
     }
     div:nth-child(2) {
       padding: 0 20px;
-      font-size: 35px;
+      font-size: 50px;
       font-weight: bold;
     }
     div:last-child {

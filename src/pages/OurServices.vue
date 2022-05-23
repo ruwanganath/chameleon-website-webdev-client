@@ -5,37 +5,27 @@
         <div>Our Services</div>
         <div></div>
       </div>
-
-      
+     
       <div class="main">
         <div class="row">
           <div class="column">
-            
               <img :src="services1" alt="img1" width="260" height="250">
-              <p >IoT services, Planning and Operations</p>
-            
-            
+              <p >IoT services, Planning and Operations</p>           
           </div>
-          <div class="column">
-            
+
+          <div class="column">            
               <img :src="services2" alt="img2" width="260" height="250">
               <p>IoT Support Services</p>
-            
-            
           </div>
+
           <div class="column">
-            
               <img :src="services3" alt="img3" width="260" height="250">
               <p>Smart Homes and Offices</p>
-            
-           
           </div>
+
           <div class="column">
-            
               <img :src="services4" alt="img4" width="260" height="250">
               <p >IoT Based Energy Management Systems</p>
-            
-            
           </div>
 
         </div>
@@ -109,7 +99,7 @@ export default {
     }
     div:nth-child(2) {
       padding: 0 20px;
-      font-size: 35px;
+      font-size: 50px;
       font-weight: bold;
     }
     div:last-child {
@@ -135,10 +125,6 @@ export default {
       }
       
 
-   
-  
-
-    
       /* Three image containers (use 25% for four, and 50% for two, etc) */
       .column {
         float: left;
@@ -206,7 +192,7 @@ body {
   .shape{
           text-align: center;
           background-color: #99c854;
-          width: 70%;
+          width: 80%;
           height: 30px;
           line-height: 30px;
           color: #0c0404;
@@ -214,18 +200,9 @@ body {
           position: relative;
           border-radius: 25px;
           font-size: 24px;
+          display:inline-block;
+          margin-left: 100px;
       }
-      .shape:before{
-        content:"";
-        width:0px;
-        height:0px;
-      
-        position:absolute;
-        
-        
-        
-      }
-
 }
  /* Three image containers (use 25% for four, and 50% for two, etc) */
       .column1 {

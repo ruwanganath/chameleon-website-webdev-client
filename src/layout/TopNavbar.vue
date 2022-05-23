@@ -84,6 +84,10 @@ const navList = [
     title: "Resources",
     value: "#/web/resources",
   },
+  {
+    title: "Blog",
+    value: "#/web/blog",
+  }
   //  {
   //   title:'Subscribe',
   //   value:'#/web/home?flag=subscribe'
