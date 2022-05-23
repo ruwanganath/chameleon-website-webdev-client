@@ -27,7 +27,9 @@
               <img :src="services4" alt="img4" width="260" height="250">
               <p >IoT Based Energy Management Systems</p>
           </div>
+
         </div>
+          
         
         <div class="row1">
           <div class="column1">
@@ -43,11 +45,19 @@
             <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
             <p>Customer Satisfaction</p>
           </div>
-        </div>     
+        </div>
+
+          
         
+
         <div class="shape">
             Providing Quality IoT Based Solutions
         </div>
+
+      
+      
+      
+      
       </div>
       
     </div>
@@ -195,16 +205,23 @@ body {
       }
 }
  /* Three image containers (use 25% for four, and 50% for two, etc) */
-    .column1 {
-      float: left;
-      padding-top: 60px;  
-      width:200px;
-      justify-content: space-evenly;
-      margin-left:200px;
-    }
+      .column1 {
+        float: left;
+        width: 33.33%;
+        
+        padding-top: 20px;
+        padding-right: 100px;
+        padding-bottom: 20px;
+        padding-left: 130px;
+        
+        
+      }
 
-    .row1{
-      display: inline-block;
-      height: 400px;
+    /* Clear floats after image containers */
+    .row1::after {
+      content: "";
+      clear: both;
+      display: table;
+
     }
 </style>
