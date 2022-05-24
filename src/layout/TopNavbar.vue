@@ -146,4 +146,8 @@ export default {
 .subscribe-li a {
   padding: 1px 10px !important;
 }
+
+.navbar{
+  background: #f3f3f3f5;
+}
 </style>

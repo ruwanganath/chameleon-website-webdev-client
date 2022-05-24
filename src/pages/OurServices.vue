@@ -31,16 +31,16 @@
         
         <div class="row1">
           <div class="column1">
-            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>
             <p>Project Completion Rate</p>
           </div>
           <div class="column1">
-            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:90"></div>
             <p>Quality Assurance</p>
             
           </div>
           <div class="column1">
-            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:81"></div>
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:87"></div>
             <p>Customer Satisfaction</p>
           </div>
         </div>     

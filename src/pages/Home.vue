@@ -72,7 +72,7 @@
     <div class="three">
       <div class="head">
         <div></div>
-        <div>Testimonals</div>
+        <div>Testimonials</div>
         <div></div>
       </div>
       <div class="main">
@@ -171,11 +171,13 @@
     </div>
 
     <div class="footer">
-        <img class="footer-tail" :src="pngwing1" alt="" />
+       
         <div class="footer-image">
           <img class="logo" :src="logo" alt="" />
         </div>
+        
         <div class="footer-first-heading">
+          <img class="footer-tail" :src="pngwing1" alt="" />
           <div class="footer-first">CHAMELEON</div>
             <div class="footer-writing">Striving to Create a</div>
             <div class="footer-writing">Smarter World!</div>
@@ -183,7 +185,7 @@
             <div class="footer-writing">+61 3 9244 6100</div>
             <div class="footer-writing">chameleon@deakin.edu.au</div>
         </div>
-
+        
         <div class="footer-second-heading">
           <div class="footer-second">EXPLORE</div>
             <div><a href="#/web/our-services"> Our services </a></div>
@@ -191,11 +193,11 @@
             <div><a href="#/web/resources"> Resources </a></div>
             <div><a href="#/web/about-us"> About us </a></div>
         </div>
-
+        
         <div class="footer-third-heading">
           <div class="footer-third">HELPFUL LINKS</div>
-            <div class="footer-writing2" @click="showPrivacy">Privacy Policy</div>
-            <div class="footer-writing2" @click="showTerms">Teams and Conditions</div>
+            <div><a href="#/web/privacy">Privacy Policy</a></div>
+            <div><a href="#/web/terms">Terms and Conditions</a></div>
           <div class="footer-third">CONNECT WITH US</div>
             <div class="button-row-one">
               <img class="sm-icons" :src="it" alt=""/>
@@ -222,6 +224,7 @@
             <button class="button button4">Subscribe Now</button>
         </div>
         <div class="@chameloen"></div>
+        
     </div>
   </div>
 </template>
@@ -347,11 +350,8 @@ export default {
       background: #fff;
       color: #faad4a;
     }
-    box-shadow: 0px -1px 2px 0 #065881 inset,
-              0px 1px 1px 1px #ccc,
-              0 0 0 6px #fff,
-              0 2px 12px 8px #ddd;
-    margin-left: 165px;
+    box-shadow: 0px -1px 2px 0 #065881 inset, 0px 1px 1px 1px #ccc, 0 0 0 1px #ababab, 0px 2px 1px 0px #ddd;
+    margin-left: 85px;
     display: block;
     float: left;
   }
@@ -518,6 +518,9 @@ export default {
           width: 200px;
         }
       }
+      textarea {
+        height:200px;
+      }
     }
   }
 }
@@ -537,7 +540,7 @@ export default {
     display: inline;
     width: 25%;
       .footer-first{
-      padding-top: 70px;
+      padding-top: 0px;
       padding-left: 40px;
       font-weight: bold;
       font-size: 23px;
@@ -627,8 +630,8 @@ export default {
     font-size: 16px;
     margin: 16px 4px;
     font-weight: bold;
-    border-radius: 12px;
     width: 200px;
+    box-shadow: 0px -1px 2px 0 #065881 inset, 0px 1px 1px 1px #ccc, 0 0 0 1px #ababab, 0px 2px 1px 0px #ddd;
 }
 a {
   color: Black;
@@ -639,13 +642,14 @@ a {
  .sm-icons {
     width: 10%;
     margin: 2px 3px 0px 30px;
+    border-radius: 90px;
+    box-shadow: 0px -1px 2px 0 #065881 inset, 0px 1px 1px 1px #ccc, 0 0 0 1px #ababab, 0px 2px 1px 0px #ddd;
   }
 
   .footer-tail {
-    width: 15%;
-    height: 40%;
-    -webkit-margin-end: -436px;
-    margin-left: 270px;
+    width: 60%;
+    height: 21%;
+    margin-left: 130px;
     opacity: 25%;
   }
 } 
