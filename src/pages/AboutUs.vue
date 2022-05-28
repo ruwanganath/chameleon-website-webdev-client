@@ -31,6 +31,9 @@
             </div>        
           </div>
         </div>
+         <div class="video-p1">
+          <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2006242/sp/200624200/embedIframeJs/uiconf_id/32026212/partner_id/2006242?iframeembed=true&playerId=kaltura_player&entry_id=1_5msw6mc6&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_6ug7f8q9" width="500" height="281" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Chameleon Company"></iframe>
+        </div>
       </div>
     </div>
 </template>
@@ -57,7 +60,6 @@ export default {
 };
 </script>
 
-
 <style scoped lang="scss">
 .three {
   padding: 40px 40px;
@@ -71,7 +73,7 @@ export default {
     }
     div:nth-child(2) {
       padding: 0 20px;
-      font-size: 35px;
+      font-size: 50px;
       font-weight: bold;
     }
     div:last-child {
@@ -114,6 +116,16 @@ export default {
    .li-container{
      margin-left: 20%;
    }
+   .video-p1 {
+      width:100%;
+      min-height:500px;
+      margin-top:40px;
+
+    } 
+    .video-p1 iframe {
+      width:100%;
+      min-height:500px;
+    } 
   }  
 }
 </style>

@@ -18,8 +18,8 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import store from './store.js'
 
-import $ from 'jquery'
-Vue.prototype.$ = $
+// import $ from 'jquery'
+// Vue.prototype.$ = $
 
 // LightBootstrap plugin
 import LightBootstrap from './light-bootstrap-main'

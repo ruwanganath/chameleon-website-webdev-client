@@ -16,5 +16,8 @@ export default {
   },
   newPassword (credentials) {
     return Api().post('new-password', credentials)
+  },
+  updateProfile(form) {
+    return Api().post('profile', form)
   }
 }
